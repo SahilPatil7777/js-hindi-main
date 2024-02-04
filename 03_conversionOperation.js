@@ -54,8 +54,8 @@ let str3 = str1 + str2;
 // console.log("1" + 2 + 2); //in this case it will join to string i.e 122
 // console.log(1 + 2 + "2"); // in this case it will first add 1 and 2 then join 3 with 2 i.e. 32
 
-// onsole.log(+true);//not good syntax
-// onsole.log(+"");//not good syntax
+// console.log(+true);//not good syntax
+// console.log(+"");//not good syntax
 
 let num1, num2, num3;
 num1 = num2 = num3 = 2 + 2; // not good syntax

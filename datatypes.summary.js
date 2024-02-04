@@ -36,3 +36,19 @@ const myFunction = function () {
 };
 
 console.log(typeof anotherId);
+
+/* Return type of variables in javascript
+   1. Primitive Datatypes
+   Number => number
+   String => string
+   Boolean => boolean
+   null => object
+   undefined => undefined
+   Symbol => Symbol
+   BigInt => binint
+
+   2. Non-Primitive Datatypes
+   Arrays => object
+   Object => object
+   Function => function object
+*/
