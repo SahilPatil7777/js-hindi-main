@@ -13,7 +13,7 @@ const anotherId = Symbol("123");
 // console.log(id);
 // console.log(anotherId);
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const bigNumber = 12345453545n;
 
@@ -32,10 +32,10 @@ let myObj = {
 };
 
 const myFunction = function () {
-  console.log("Hello World");
+  // console.log("Hello World");
 };
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
 
 /* Return type of variables in javascript
    1. Primitive Datatypes
@@ -52,3 +52,30 @@ console.log(typeof anotherId);
    Object => object
    Function => function object
 */
+
+// ******************************************** Memories *********************************************************
+
+// Two types of memory : Stack used in primitive datatypes, Heap used in non-primitive datatypes
+// Stack is just give the copy of variables
+// Stack
+let myName = "sahil";
+
+let anotherName = myName;
+anotherName = "sahilpatil";
+
+// console.log(myName);
+// console.log(anotherName);
+
+// Heap: when you take reference from heap it gives original value reference
+// Heap
+
+let userOne = {
+  email: "user@goole.com",
+  upi: "user@ybl",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "sahil@google.com";
+console.log(userOne.email);
+console.log(userTwo.email);
