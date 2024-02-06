@@ -67,10 +67,40 @@ const users = [
 ];
 // console.log(users[1].email);
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser)); //make each key: value in array
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser)); //make each key: value in array
 
-console.log(tinderUser.hasOwnProperty("isLoggedn")); //hasOwnProperty used for check property
+// console.log(tinderUser.hasOwnProperty("isLoggedn")); //hasOwnProperty used for check property
+
+//*************************************  Destructuring  *******************************************************
+const course = {
+  coursename: "js hindi ",
+  price: "999",
+  courseTecher: "hitesh",
+};
+// console.log(course.courseTecher); // it is also good way
+
+const { courseTecher: tea } = course; // using destructuring // courseTeacher give name as tea
+console.log(tea);
+
+// react portition ignore
+// const navbar = ({company}) => {
+//
+// }
+// navbar(company = "hitesh")
+
+// API's:
+// in api you can get object or array anything
+
+// json: javascript object notation
+// Structure of json
+// {
+// "coursename": "js hindi ",
+// "price": "999",
+// "courseTecher": "hitesh"
+// }
+
+[{}, {}, {}];
