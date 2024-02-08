@@ -13,6 +13,45 @@ if (true) {
   // becuase even if scope c is in this loop only but it print c that's why var is not used
 }
 
-console.log(a);
+// console.log(a);
 // console.log(b);
 // console.log(c);
+
+// Nested scope : only child can access the parent properties not vice versa
+// function one() {
+//   const username = "hitesh";
+
+//   function two() {
+// const website = "youtube";
+// console.log(username);
+//   }
+// console.log(website);//not within scope
+
+//   two(); //execute
+// }
+// one(); //execute
+
+if (true) {
+  const username = "hitesh";
+  if (username === "hitesh") {
+    const website = " youtube";
+    // console.log(username + website);
+  }
+  //   console.log(website);// not within scope
+}
+// console.log(username); //not within scope
+
+// ***************************************** Intresting *********************************************
+// addone(5);// it can be run easily
+function addone(num) {
+  return num + 1;
+}
+addone(5);
+
+// expression // different way of function
+
+//  addtwo(5); // it cannot be run easily
+const addtwo = function (num) {
+  return num + 2;
+};
+addtwo(5);
