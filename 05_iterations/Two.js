@@ -9,7 +9,7 @@ while (index <= 10) {
 let myArray = ["akash", "nihal", "rohit"];
 let arr = 0;
 while (arr < myArray.length) {
-  //   console.log(`value is ${myArray[arr]}`);
+  // console.log(`value is ${myArray[arr]}`);
   arr++;
 }
 
