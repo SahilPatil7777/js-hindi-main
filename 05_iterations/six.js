@@ -10,7 +10,7 @@
 
 const myNums = [1, 2, 3, 4, 5, 6, 7];
 
-// filter operation return values
+// filter operation return  only true values
 // const newNums = myNums.filter((num) => num > 4);
 
 // another way using filters
