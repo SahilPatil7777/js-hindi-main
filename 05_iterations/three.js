@@ -31,7 +31,7 @@ for (const [key, value] of map) {
   //   console.log(key, ":-", value);
 }
 
-// forof loop on object : it will not work on object
+// forof loop on object : it will not work on object.
 const myObj = {
   game1: "NFS",
   game2: "GTA",
