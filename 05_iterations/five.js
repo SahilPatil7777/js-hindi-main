@@ -41,5 +41,5 @@ const mycoding = [
 
 // access object in arrays using forEach loop
 mycoding.forEach((item) => {
-  console.log(item.lanName);
+  //   console.log(item.lanName);
 });
