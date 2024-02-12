@@ -38,6 +38,6 @@ const myObj = {
 };
 
 for (const [key, value] of myObj) {
-  // both key and values
+  //both key and values
   console.log(key, ":-", value);
 }
