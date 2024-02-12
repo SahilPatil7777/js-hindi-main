@@ -10,10 +10,10 @@
 
 const myNums = [1, 2, 3, 4, 5, 6, 7];
 
-// this operation return values
+// filter operation return values
 // const newNums = myNums.filter((num) => num > 4);
 
-// another way
+// another way using filters
 // const newNums = myNums.filter((num) => {
 //   return num > 4;
 // });
@@ -21,7 +21,8 @@ const myNums = [1, 2, 3, 4, 5, 6, 7];
 
 // Using for loop
 // const newNums = [];
-//
+
+// you need to explicitly return values using forEach loop
 // myNums.forEach((num) => {
 //   if (num > 4) {
 // newNums.push(num);
