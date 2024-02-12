@@ -1,6 +1,6 @@
 const coding = ["js", "java", "python", "Mangodb"];
 
-// forEach loop cannot return specific condition  values
+// forEach loop cannot return specific condition values
 // const values = coding.forEach((item) => {
 //   console.log(item);
 //   return item;
