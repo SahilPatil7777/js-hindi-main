@@ -17,7 +17,7 @@ for (const greet of greetings) {
   //   console.log(`each char is ${greet}`);
 }
 
-// Maps
+// Map
 const map = new Map();
 map.set("IN", "India");
 map.set("USA", "United State of America");
@@ -37,7 +37,8 @@ const myObj = {
   game2: "GTA",
 };
 
+// it give and error
 for (const [key, value] of myObj) {
-  //both key and values
+  // both key and values
   console.log(key, ":-", value);
 }
