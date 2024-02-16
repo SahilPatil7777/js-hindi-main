@@ -36,28 +36,40 @@ buttons.forEach(function (button) {
 
 ## project 2 solution
 
-```const form = document.querySelector("form")
+```javascript
+const form = document.querySelector("form");
 // this usecase will give you empty value
 // const height = parseInt(document.querySelector("#height").value)
 
-form.addEventListener('submit',function(e){
-  e.preventDefault()//stop form's defualt action like its value go to server or url.
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); //stop form's defualt action like its value go to server or url.
 
-  const height = parseInt(document.querySelector("#height").value)
-  const weight = parseInt(document.querySelector("#weight").value)
-  const results = document.querySelector("#results")
+  const height = parseInt(document.querySelector("#height").value);
+  const weight = parseInt(document.querySelector("#weight").value);
+  const results = document.querySelector("#results");
 
   // check's
-  if(height === '' || height < 0 || isNaN(height)){
-    results.innerHTML = `Please give a valid height ${height}`
-  }
-  else if(weight === '' || weight < 0 || isNaN(weight)){
-    results.innerHTML = `Please give a valid weight ${weight}`
-  }
-  else{
-    const bmi = (weight / ((height * height)/1000)).toFixed(2)
+  if (height === "" || height < 0 || isNaN(height)) {
+    results.innerHTML = `Please give a valid height ${height}`;
+  } else if (weight === "" || weight < 0 || isNaN(weight)) {
+    results.innerHTML = `Please give a valid weight ${weight}`;
+  } else {
+    const bmi = (weight / ((height * height) / 1000)).toFixed(2);
     // display in result
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
+```
+
+## project 3 solution
+
+```javascript
+document.getElementById("clock");
+// document.querySelector("#clock")
+
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleTimeString())
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
 ```
