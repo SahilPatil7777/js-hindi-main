@@ -1,0 +1,34 @@
+<!-- javascript : synchronous: execute code one by one
+                  single threaded: everything execute on single thread -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>setInterval</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <h1>Chai or Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // setInterval means after 2 second hitesh will print again and again
+    // setInterval(function () {
+    //   console.log("hitesh", Date.now());
+    // }, 2000);
+    // ***********************************************************************
+    const sayDate = function (str) {
+      console.log(str, Date.now());
+    };
+    const intervalID = setInterval(sayDate, 2000, "hii");
+
+    // clearInterval(intervalID); // clearInterval used to stop setInterval
+
+    document.querySelector("#start").addEventListener("click", sayDate);
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(intervalID); //clearInterval used to stop setInterval
+      console.log("STOPPED");
+    });
+  </script>
+</html>
