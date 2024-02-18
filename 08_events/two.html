@@ -1,0 +1,36 @@
+<!-- javascript : synchronous: execute code one by one
+                  single threaded: everything execute on single thread -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>setTimeout</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <h1>Chai or Code</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    // setTimeout means after 2 second hitesh will print
+    // setTimeout(function () {
+    //   console.log("hitesh");
+    // }, 2000);
+
+    // another way
+    // const saySahil = function () {
+    //   console.log("sahil");
+    // };
+    // setTimeout(saySahil, 2000);
+
+    const changeText = function () {
+      document.querySelector("h1").innerHTML = "best js series";
+    };
+
+    const changeme = setTimeout(changeText, 2000);
+
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearTimeout(changeme); //clearTimeout used to stop setTimesout
+      console.log("STOPPED");
+    });
+  </script>
+</html>
