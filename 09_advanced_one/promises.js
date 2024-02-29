@@ -113,3 +113,4 @@ fetch("https://api.github.com/users/hiteshchoudhary")
   .catch((error) => console.log(error));
 
 // fetch is execute first than other .then, .catch, .finally because it make special queue for fetch.
+// micro task queue
