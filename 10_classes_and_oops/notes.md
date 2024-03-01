@@ -1,6 +1,6 @@
 # javascript and classes
 
-- javascript is not oop language.it is prototype-based language(meanig aceessing properties till get null. it go till last. it provide OOP's, protype- inheritance, this keyword).
+- javascript is not oop language.it is prototype-based language(meanig aceessing properties till get null. it go till last. it provide OOP's, protype - inheritance, this keyword).
 
 ## OOP
 
