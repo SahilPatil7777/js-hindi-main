@@ -1,6 +1,6 @@
 // Magic of Prototype in js
 // new keyword in object
-// prototype means access till null mean go up and up.
+// prototype means access till null, mean go up and up.
 // it is prototype-based language(meanig aceessing properties till get null.go till last. it provide OOP's, protype - inheritance, this keyword ( protype behaviour means har nahi manana )).
 // function is fucntion also and object also
 function multipleBy5(num) {
