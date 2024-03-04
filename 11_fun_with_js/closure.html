@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>closure aur chai</title>
+  </head>
+  <body style="background-color: black">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+  </body>
+  <script>
+    // function init() {
+    // let name = "Mozilla";
+    // function displayName() {
+    // console.log(name);
+    // }
+    // displayName();
+    // }
+    // init();
+
+    // lexical scoping : The function inside another function can have access to outer function varible.but outside the outer function scope you cannot access the varible
+    // function outer() {
+    //   let username = "hitesh";
+    //   console.log("OUTER", secret);// it cannot have access to it's child function
+    //   function inner() {
+    // let secret = "my123";
+    // console.log("INNER", username); //username will be accessable
+    //   }
+    //   function innerTwo() {
+    // console.log("INNERTWO", username);
+    // console.log(secret); // it cannot access the varible one function to another function
+    //   }
+    //   inner();
+    //   innerTwo();
+    // }
+    // outer();
+    // console.log("TOO OUTER", username); // variables which declare inside function is not accessible to outside function
+
+    // closure
+    // function makeFunc() {
+    //   let name = "Mozilla";
+    //   function displayName() {
+    // console.log(name);
+    //   }
+    //   return displayName;
+    // }
+    // const myFunc = makeFunc();
+    // myFunc();
+  </script>
+  <script>
+    // closure
+    // not good when large no.of color set we are not follow dry principle eg.set 100 color
+    // document.getElementById("orange").onclick = function () {
+    //   document.body.style.backgroundColor = "orange";
+    // };
+    // document.getElementById("green").onclick = function () {
+    //   document.body.style.backgroundColor = "green ";
+    // };
+
+    // OR
+    function clickHandler(color) {
+      //only function is not return the entire function will return eg. clickHandler is called lexical scope
+      //   document.body.style.backgroundColor = `${color}`; // not work properly
+      return function () {
+        document.body.style.backgroundColor = `${color}`;
+      };
+    }
+    document.getElementById("orange").onclick = clickHandler("orange");
+    document.getElementById("green").onclick = clickHandler("green");
+  </script>
+</html>
