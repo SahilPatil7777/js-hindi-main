@@ -1,7 +1,7 @@
 // getter's and setter's
 class User {
   constructor(email, password) {
-    //constructor set the email but not password because password is override in get and ser
+    //constructor set the email but not password because password is override in get and set
     this.email = email;
     this.password = password;
   }
