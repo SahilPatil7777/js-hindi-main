@@ -10,7 +10,7 @@ const coding = ["js", "java", "python", "Mangodb"];
 
 const myNums = [1, 2, 3, 4, 5, 6, 7];
 
-// filter method  operation return  only true values
+// filter method/ operation return  only true values
 // const newNums = myNums.filter((num) => num > 4);
 
 // another way using filters
